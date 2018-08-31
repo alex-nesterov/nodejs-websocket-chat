@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "tslint-eslint-rules",
+    "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+    "object-curly-spacing": true,
+    "interface-name": false,
+    "object-literal-sort-keys": false,
+    "member-ordering": false,
+    "variable-name": ["allow-leading-underscore"],
+    "max-line-length": [false],
+    "no-empty": false,
+    "no-console": false,
+    "no-bitwise": false,
+    "only-arrow-functions": ["allow-declarations"],
+    "no-var-requires": false
+  },
+  "rulesDirectory": []
+}
