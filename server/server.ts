@@ -47,7 +47,7 @@ server.on("error", (e) => {
     console.log(e);
     throw e;
 });
-server.listen(3000, function(err) {
+server.listen(3000, (err) => {
     if (err) {
         throw err;
     }

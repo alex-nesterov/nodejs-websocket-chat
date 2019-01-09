@@ -1,4 +1,4 @@
-i found this [websocket-chat example](https://github.com/justadudewhohacks/websocket-chat) simple and cool, thats why i forked it and refactored server code in more SOLID way (typescript and ES6 a little).
+i found this [websocket-chat example](https://github.com/justadudewhohacks/websocket-chat) simple and cool, thats why i forked it and refactored server code with typescript and ES6.
 ===
 
 *Websocket based group chat app built with socket.io, react and material-ui à la The Walking Dead flavor*

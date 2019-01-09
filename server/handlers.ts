@@ -4,7 +4,7 @@ import HandleEvent from "./HandleEvent";
 export default (client, clientManager, chatroomManager) => {
     const handleEvent = HandleEvent(client, clientManager, chatroomManager);
 
-    function handleRegister(userName, callback) {
+    function handleRegister(userName: String, callback) {
         if (!clientManager.isUserAvailable(userName)) {
             return callback("user is not available");
         }
@@ -15,7 +15,7 @@ export default (client, clientManager, chatroomManager) => {
         return callback(null, user);
     }
 
-    function handleJoin(chatroomName, callback) {
+    function handleJoin(chatroomName: String, callback) {
         const createEntry = () => ({ event: `joined ${chatroomName}` });
 
         handleEvent(chatroomName, createEntry)
@@ -28,7 +28,7 @@ export default (client, clientManager, chatroomManager) => {
             .catch(callback);
     }
 
-    function handleLeave(chatroomName, callback) {
+    function handleLeave(chatroomName: String, callback) {
         const createEntry = () => ({ event: `left ${chatroomName}` });
 
         handleEvent(chatroomName, createEntry)
